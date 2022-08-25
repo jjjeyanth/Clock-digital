@@ -1,2 +1,3 @@
 # Clock-digital
 Displays time according to the time set by the user
+Set the clock by giving h,m, and s -3 integer inputs. Then the clock starts to tick...
