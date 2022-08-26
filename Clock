@@ -1,3 +1,5 @@
+//c program
+
 #include<stdio.h>
 #include<windows.h>
 int main()
@@ -35,6 +37,44 @@ int main()
 
 	}
 
+}
+
+//c++ program
+
+#include <iostream>
+#include <cstdlib>
+#include <unistd.h>
+using namespace std;
+int main()
+{
+	int h,m,s;
+	cout<<"enter h:m:s"<<endl;
+	cin>>h>>m>>s;
+	while(1)
+	{
+		s++;
+		if(s>59)
+		{
+			s=0;
+			m++;
+		}
+		if(m>59)
+		{
+			m=0;
+			h++;
+		}
+		if(h>12)
+		{
+			h=1;
+		}
+		char z[10]={0};
+		sprintf(z, "%02d:%02d:%02d", h, m, s);
+		cout << z;
+		sleep(1);
+		system("cls");
+		continue;
+		
+	}
 }
 
 
